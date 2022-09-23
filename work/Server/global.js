@@ -1,11 +1,12 @@
 
 //this writes down the time intervals needed to add variables
-console.log(global);
+//console.log(global);
   
 
 //time out is set for loging into the console by adding time intervars
 setTimeout(()=>{
     console.log('in the Cloud');
+    //this stops the set time out
     clearInterval(int);
 },5000)
 
