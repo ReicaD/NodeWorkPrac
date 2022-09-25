@@ -30,33 +30,23 @@ const fs = require("fs");
 
 //directories
 //this checks if something like a file for example exist
-if (!fs.existsSync("./assets")) {
-  //here we make directories to add a file or directories
-  fs.mkdir("./assets", (err) => {
+// ls
+
+
+//deleting files 
+//below its the formular of deleting files after calling in the file and by using fs.unlink and adding a condition statement using a fat arrow
+
+if (fs.existsSync("./Server/deletem.txt")){
+  fs.unlink('./Server/deletm.txt', (err) => {
     if (err) {
-      console.log(err);
-    } else {
+      console.log(err)
     }
-    console.log("folder created");
-  });
-} else {
-  fs.rmdir("./assets", (err) => {
-    if (err) {
-      console.log(err);
-    }
-    console.log(err);
-  });
+    console.log('file deleted');
+  })
 
-  //  fs.rmdir('./asset',(err)=>{
-  //    if (err){
-  //     //  console.log(err){
+};
 
-  //     //  }
+//streams
+//start using data,before its fully being read
+ 
 
-  //  }
-}
-
-//  } else{
-
-//deleting files
-//
