@@ -1,4 +1,4 @@
-//making a variable that will be exported with node modules unde Modules.js
+//making a variable that will be exported with node modules under Modules.js
 
 const people = ["men", "women", "other"];
 
